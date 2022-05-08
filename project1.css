@@ -1,0 +1,188 @@
+
+header {
+    background-color: dimgray;
+    padding: 5px;
+    color: white;
+    font-size: larger;
+    text-align: center;
+
+}
+
+#menu {
+
+    margin: 0px;
+    background-color: gray;
+    padding-bottom: 20px;
+
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+#menu li {
+    display: inline-block;
+    padding: 2px;
+
+}
+
+#menu li:nth-child(2):hover #dropdown1,
+#menu li:nth-child(3):hover #dropdown2 {
+    display: block;
+
+
+}
+
+#dropdown1,
+#dropdown2 {
+    position: absolute;
+    width: auto;
+    display: none;
+    background-color: whitesmoke;
+    max-width: 120px;
+    padding: 0px;
+    top: 105px;
+}
+
+#dropdown1 li:hover,
+#dropdown2 li:hover {
+    background-color: gainsboro;
+    color: rgb(67, 191, 232);
+}
+
+#dropdown1 li a,
+#dropdown2 li a {
+    color: lightblue;
+
+}
+
+footer {
+    background-color: black;
+    font-size: smaller;
+    color: white;
+    text-align: right;
+    padding: 20px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 100%;
+    padding: 5px;
+    height: auto;
+
+}
+
+.one {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+two,
+three {
+    color: aqua;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
+h3{
+    padding: 2px;
+    font-weight: bold;
+    font-size: larger;
+}
+img {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background:white;
+    border: black;
+
+}
+
+.slider {
+    width: 800px;
+    height: 600px;
+    background: url(ani1.jpg);
+    margin: 100px auto;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: slide;
+    background-position: 150px 100px;
+    background-size: cover;
+    
+
+}
+
+@keyframes slide {
+    25% {
+        background: url(ani2.png);
+    }
+
+    50% {
+        background: url(ani3.jpg);
+    }
+
+    70% {
+        background: url(ani4.jpg);
+    }
+
+    100% {
+        background: url(ani5.jpg);
+    }
+
+
+
+
+}
+
+.two {
+    color: rgb(67, 191, 232);
+    padding: 2px;
+    margin-left: 5px;
+}
+
+.three {
+    color: rgb(67, 191, 232);
+    padding: 2px;
+    margin-left: 5px;
+}
+
+button {
+    color: orange;
+    border-color: blueviolet;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(250, 234, 230);
+    
+
+}
